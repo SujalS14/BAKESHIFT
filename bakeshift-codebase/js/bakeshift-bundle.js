@@ -4,7 +4,7 @@
  * and directly via local file protocols (file://) without CORS restrictions.
  * 
  * Brand Slogan: BAKE MORE WITH LESS.
- * Retail Price: $49.99 USD
+ * Retail Price: $47.00 USD
  */
 
 (function () {
@@ -25,7 +25,7 @@
     slogan: 'BAKE MORE WITH LESS.',
     subheading: 'One pan. Endless possibilities.',
     description: 'Meet BAKESHIFT — one innovative baking system designed to bring flexibility, convenience, and creativity into your kitchen.',
-    price: 49.99,
+    price: 47.00,
     currency: 'USD',
     colors: {
       primaryBg: '#FFFFFF',
@@ -45,7 +45,7 @@
     slogan: 'BAKE MORE WITH LESS.',
     subheading: 'One pan. Endless possibilities.',
     description: 'Meet BAKESHIFT — one innovative baking system designed to bring flexibility, convenience, and creativity into your kitchen.',
-    price: 49.99,
+    price: 47.00,
     currency: 'USD',
     material: 'Heavy-Gauge Commercial Aluminized Steel & 304 Stainless Steel',
     dimensions: '15" × 10" × 2" (381 × 254 × 50.8 mm)',
@@ -181,7 +181,7 @@
       stats: [
         { label: 'Replaces', value: '5+ Bulky Tins' },
         { label: 'Cabinet Savings', value: 'Over 70% Space' },
-        { label: 'Complete System', value: '$49.99 Fixed' }
+        { label: 'Complete System', value: '$47.00 Fixed' }
       ]
     }
   ];
@@ -189,7 +189,7 @@
   const TECHNICAL_SPECS = {
     general: [
       { label: 'Product Name', value: 'BAKESHIFT Complete Baking System' },
-      { label: 'Retail Price', value: '$49.99 USD (Complete Kit)' },
+      { label: 'Retail Price', value: '$47.00 USD (Complete Kit)' },
       { label: 'Official Slogan', value: 'BAKE MORE WITH LESS.' },
       { label: 'Pan Architecture', value: 'Modular baking system with removable 6-cup tray & 2 adjustable partitions' }
     ],
@@ -253,7 +253,7 @@
     },
     {
       q: 'What is the retail price and what is included in the box?',
-      a: 'The final retail price is $49.99 USD for the complete kit. The package includes: (1) aluminized-steel base pan (15×10×2 in), (1) removable six-cup cupcake tray (2×3 grid), (2) adjustable bare-metal partitions, (6) mounted toggle clasps, and a quick-start configuration guide.'
+      a: 'The final retail price is $47.00 USD for the complete kit. The package includes: (1) aluminized-steel base pan (15×10×2 in), (1) removable six-cup cupcake tray (2×3 grid), (2) adjustable bare-metal partitions, (6) mounted toggle clasps, and a quick-start configuration guide.'
     },
     {
       q: 'Is this website ready to process customer orders?',
@@ -336,7 +336,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
       const totalCount = this.items.reduce((sum, item) => sum + item.quantity, 0);
       const subtotalRaw = this.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
       const subtotal = Math.round(subtotalRaw * 100) / 100;
-      const shipping = totalCount > 0 ? 12.00 : 0.00;
+      const shipping = totalCount > 0 ? 2.00 : 0.00;
       const taxRate = 0.0825;
       const tax = totalCount > 0 ? Math.round(subtotal * taxRate * 100) / 100 : 0.00;
       const total = totalCount > 0 ? Math.round((subtotal + shipping + tax) * 100) / 100 : 0.00;
@@ -2069,7 +2069,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
           <div style="text-align: center; padding: 3rem 1rem; color: var(--color-muted-text);">
             <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-charcoal); font-weight: 600;">Your Bag is empty.</p>
             <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Explore the BAKESHIFT modular system and bake more with less.</p>
-            <a href="#shop" class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.closeDrawer()">Shop BAKESHIFT — $49.99</a>
+            <a href="#shop" class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.closeDrawer()">Shop BAKESHIFT — $47.00</a>
           </div>
         `;
         return;
@@ -2161,7 +2161,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
 
       const state = cart.getState();
       const totalUnits = state.items.length > 0 ? state.totalCount : 1;
-      const totalFormatted = state.items.length > 0 ? state.totalFormatted : '$66.11';
+      const totalFormatted = state.items.length > 0 ? state.totalFormatted : '$52.88';
 
       if (payBtn) {
         payBtn.disabled = true;
@@ -2317,7 +2317,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               </p>
               <div class="hero-ctas">
                 <a href="#explore" class="btn btn-primary btn-lg">Explore BAKESHIFT</a>
-                <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy — $49.99</button>
+                <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy — $47.00</button>
               </div>
             </div>
 
@@ -2352,7 +2352,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               <span class="spec-pill">2 Adjustable Bare-Metal Partitions</span>
               <span class="spec-pill">6 Total Wire Toggle Clasps</span>
               <span class="spec-pill" style="border-color: var(--color-copper); color: var(--color-copper);">Zero Silicone Grips</span>
-              <span class="spec-pill">$49.99 Complete System</span>
+              <span class="spec-pill">$47.00 Complete System</span>
             </div>
           </div>
         </section>
@@ -2487,7 +2487,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                     </div>
                     ${story.id === 'story-5' ? `
                       <div style="margin-top: 1.75rem;">
-                        <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $49.99</a>
+                        <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $47.00</a>
                       </div>
                     ` : ''}
                   </div>
@@ -2529,7 +2529,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                       Explore in 3D →
                     </button>
                     <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">
-                      Buy $49.99
+                      Buy $47.00
                     </button>
                   </div>
                 </div>
@@ -2562,20 +2562,20 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               <div style="padding: 2.5rem; background: var(--color-cream-card); border-radius: var(--radius-lg); border: 2px solid var(--color-copper);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.0rem;">
                   <h4 style="font-size: 1.25rem; color: var(--color-charcoal);">BAKESHIFT System</h4>
-                  <span style="font-weight: 700; color: var(--color-copper);">$49.99 Fixed</span>
+                  <span style="font-weight: 700; color: var(--color-copper);">$47.00 Fixed</span>
                 </div>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.92rem; color: var(--color-charcoal);">
                   <li>✓ 1 modular pan configures to cupcakes, cakes, & loaves</li>
                   <li>✓ Ultra-slim 2.0" profile saves 70% cabinet space</li>
                   <li>✓ Heavy-gauge aluminized steel with zero warping</li>
                   <li>✓ Bare metal metallurgy: 100% PTFE/PFOA/Silicone-free</li>
-                  <li>✓ Lifetime heirloom durability for just $49.99</li>
+                  <li>✓ Lifetime heirloom durability for just $47.00</li>
                 </ul>
               </div>
             </div>
 
             <div style="margin-top: 3.5rem;">
-              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $49.99</button>
+              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $47.00</button>
             </div>
           </div>
         </section>
@@ -2803,10 +2803,10 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
             <div style="background: var(--color-white); border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: 3.0rem; text-align: center; box-shadow: 0 16px 36px var(--color-shadow);">
               <h2 style="font-size: 2.0rem; margin-bottom: 0.6rem;">Experience heirloom industrial bakeware.</h2>
               <p style="color: var(--color-muted-text); margin-bottom: 2.0rem; font-size: 1.05rem;">
-                Fixed retail kit price: <strong>$49.99 USD</strong>. Complete 6-item system.
+                Fixed retail kit price: <strong>$47.00 USD</strong>. Complete 6-item system.
               </p>
               <div style="display: flex; justify-content: center; gap: 1.0rem; flex-wrap: wrap;">
-                <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy BAKESHIFT — $49.99</button>
+                <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy BAKESHIFT — $47.00</button>
                 <a href="#features" class="btn btn-outline btn-lg">View Modular Features</a>
               </div>
             </div>
@@ -2860,7 +2860,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                       Inspect in 3D →
                     </a>
                     <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">
-                      Buy $49.99
+                      Buy $47.00
                     </button>
                   </div>
                 </div>
@@ -2893,7 +2893,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                 <div style="padding: 2.5rem; background: var(--color-white); border-radius: var(--radius-lg); border: 2px solid var(--color-copper);">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.0rem;">
                     <h4 style="font-size: 1.25rem; color: var(--color-charcoal);">BAKESHIFT System</h4>
-                    <span style="font-weight: 700; color: var(--color-copper);">$49.99 Fixed</span>
+                    <span style="font-weight: 700; color: var(--color-copper);">$47.00 Fixed</span>
                   </div>
                   <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.92rem; color: var(--color-charcoal);">
                     <li>✓ 1 modular pan configures to cupcakes, cakes, & loaves</li>
@@ -2901,7 +2901,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                     <li>✓ All removable parts nest flush inside the base pan</li>
                     <li>✓ Heavy-gauge aluminized steel with zero warping</li>
                     <li>✓ Bare metal metallurgy: 100% PTFE/PFOA/Silicone-free</li>
-                    <li>✓ Lifetime heirloom durability for just $49.99</li>
+                    <li>✓ Lifetime heirloom durability for just $47.00</li>
                   </ul>
                 </div>
               </div>
@@ -2909,7 +2909,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
 
             <!-- Bottom CTA -->
             <div class="text-center" style="margin-top: 2.0rem;">
-              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $49.99</button>
+              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $47.00</button>
             </div>
           </div>
         </section>
@@ -2933,7 +2933,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               </div>
               <div style="display: flex; gap: 0.75rem;">
                 <button class="btn btn-outline btn-sm" id="exploreResetBtn">Reset Model</button>
-                <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">Buy Now — $49.99</button>
+                <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">Buy Now — $47.00</button>
               </div>
             </div>
 
@@ -3023,7 +3023,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                   Main 15×10×2" aluminized steel pan with removable 6-cup muffin tray (2×3 layout) and two independently adjustable partitions. All six wire toggle clasps secure firmly against the outer rim.
                 </p>
               </div>
-              <button class="btn btn-copper btn-md" onclick="window.bakeshiftApp.quickBuy()">Order BAKESHIFT — $49.99</button>
+              <button class="btn btn-copper btn-md" onclick="window.bakeshiftApp.quickBuy()">Order BAKESHIFT — $47.00</button>
             </div>
           </div>
         </section>
@@ -3197,7 +3197,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
             </div>
 
             <div class="text-center" style="margin-top: 5.0rem;">
-              <a href="#shop" class="btn btn-copper btn-lg">Order BAKESHIFT for $49.99</a>
+              <a href="#shop" class="btn btn-copper btn-lg">Order BAKESHIFT for $47.00</a>
             </div>
           </div>
         </section>
@@ -3360,7 +3360,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
             </div>
 
             <div class="text-center" style="margin-top: 3.0rem;">
-              <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $49.99</a>
+              <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $47.00</a>
             </div>
           </div>
         </section>
@@ -3432,7 +3432,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                 <span class="eyebrow">Official Store</span>
                 <h1 style="font-size: 2.6rem; line-height: 1.1; margin: 0.4rem 0;">${BAKESHIFT_PRODUCT.name}</h1>
                 <p style="font-size: 1.1rem; color: var(--color-copper); font-weight: 600;">${BAKESHIFT_PRODUCT.slogan}</p>
-                <div class="product-price-tag">$49.99</div>
+                <div class="product-price-tag">$47.00</div>
 
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; font-size: 0.88rem; color: #2e7d32; font-weight: 500;">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -3450,7 +3450,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                     <span class="qty-display" id="shopQtyDisplay">1</span>
                     <button class="qty-btn" id="shopQtyPlus">+</button>
                   </div>
-                  <div style="font-size: 1.15rem; font-weight: 700; color: var(--color-charcoal);" id="shopTotalCalc">$49.99 Total</div>
+                  <div style="font-size: 1.15rem; font-weight: 700; color: var(--color-charcoal);" id="shopTotalCalc">$47.00 Total</div>
                 </div>
 
                 <!-- CTAs -->
@@ -3493,7 +3493,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                       <span class="accordion-icon">▼</span>
                     </button>
                     <div class="accordion-content">
-                      <p>Standard tracked US ground shipping is $12.00 per order (2–4 business days). Applicable state sales tax (8.25%) is calculated and applied at checkout.</p>
+                      <p>Standard tracked US ground shipping is $2.00 per order (2–4 business days). Applicable state sales tax (8.25%) is calculated and applied at checkout.</p>
                     </div>
                   </div>
                 </div>
@@ -3515,7 +3515,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
 
       const updateShopTotal = () => {
         display.textContent = this.selectedShopQty;
-        totalEl.textContent = `$${(49.99 * this.selectedShopQty).toFixed(2)} Total`;
+        totalEl.textContent = `$${(47.00 * this.selectedShopQty).toFixed(2)} Total`;
       };
 
       if (minusBtn) minusBtn.addEventListener('click', () => { if (this.selectedShopQty > 1) { this.selectedShopQty--; updateShopTotal(); } });
@@ -3595,14 +3595,14 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               <h1 class="headline-section" style="margin-bottom: 0;">Review your Bag.</h1>
             </div>
             <p style="color: var(--color-muted-text); margin-bottom: 2.5rem; font-size: 0.95rem;">
-              Standard tracked US ground shipping ($12.00) and sales tax (8.25%) are calculated below.
+              Standard tracked US ground shipping ($2.00) and sales tax (8.25%) are calculated below.
             </p>
             ${state.items.length === 0 ? `
               <div style="text-align: center; padding: 5rem 1rem; background: var(--color-light-gray); border-radius: var(--radius-lg);">
                 <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;">Your Bag is empty.</h3>
                 <p style="color: var(--color-muted-text); margin-bottom: 2.0rem;">Add the BAKESHIFT modular system to experience clutter-free baking.</p>
                 <div style="display: flex; justify-content: center; gap: 1.0rem; flex-wrap: wrap;">
-                  <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $49.99</a>
+                  <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $47.00</a>
                   <a href="#shop" class="btn btn-outline btn-lg">Continue Shopping</a>
                 </div>
               </div>
@@ -3669,10 +3669,10 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
       this.checkoutMode = this.checkoutMode || 'preview';
       const state = cart.getState();
       const hasItems = state.items.length > 0;
-      const subtotalFormatted = hasItems ? state.subtotalFormatted : '$49.99';
-      const shippingFormatted = hasItems ? state.shippingFormatted : '$12.00';
-      const taxFormatted = hasItems ? state.taxFormatted : '$4.12';
-      const totalFormatted = hasItems ? state.totalFormatted : '$66.11';
+      const subtotalFormatted = hasItems ? state.subtotalFormatted : '$47.00';
+      const shippingFormatted = hasItems ? state.shippingFormatted : '$2.00';
+      const taxFormatted = hasItems ? state.taxFormatted : '$3.88';
+      const totalFormatted = hasItems ? state.totalFormatted : '$52.88';
       const totalUnits = hasItems ? state.totalCount : 1;
 
       container.innerHTML = `
@@ -3724,7 +3724,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
               <div class="checkout-stepper">
                 <div class="step-indicator active"><span class="step-circle">1</span><span>Review Bag</span></div>
                 <span style="color: var(--color-border); font-size: 1.2rem;">—</span>
-                <div class="step-indicator active"><span class="step-circle">2</span><span>Shipping ($12.00)</span></div>
+                <div class="step-indicator active"><span class="step-circle">2</span><span>Shipping ($2.00)</span></div>
                 <span style="color: var(--color-border); font-size: 1.2rem;">—</span>
                 <div class="step-indicator active"><span class="step-circle">3</span><span>Stripe Sandbox Payment</span></div>
               </div>
@@ -3865,7 +3865,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                       </div>
                       <div>
                         <div style="font-weight: 600; font-size: 0.95rem;">${BAKESHIFT_PRODUCT.name}</div>
-                        <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $49.99 each</div>
+                        <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $47.00 each</div>
                       </div>
                       <div style="margin-left: auto; font-weight: 700;">${subtotalFormatted}</div>
                     </div>
@@ -3981,7 +3981,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                       </div>
                       <div>
                         <div style="font-weight: 600; font-size: 0.95rem;">${BAKESHIFT_PRODUCT.name}</div>
-                        <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $49.99 each</div>
+                        <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $47.00 each</div>
                       </div>
                       <div style="margin-left: auto; font-weight: 700;">${subtotalFormatted}</div>
                     </div>
@@ -4039,7 +4039,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
             </div>
 
             <div class="text-center">
-              <a href="#shop" class="btn btn-copper btn-lg">Experience BAKESHIFT — $49.99</a>
+              <a href="#shop" class="btn btn-copper btn-lg">Experience BAKESHIFT — $47.00</a>
             </div>
           </div>
         </section>
@@ -4098,10 +4098,10 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
                 <div><strong>Brand:</strong> BAKESHIFT Inc.</div>
                 <div><strong>Headquarters:</strong> Culinary Innovation Lab</div>
                 <div><strong>Email:</strong> contact@bakeshift.com (Demonstration)</div>
-                <div><strong>Retail System:</strong> $49.99 USD Complete Baking System</div>
+                <div><strong>Retail System:</strong> $47.00 USD Complete Baking System</div>
               </div>
               <div style="margin-top: 2.0rem;">
-                <a href="#shop" class="btn btn-copper btn-md" style="width: 100%;">Explore Product — $49.99</a>
+                <a href="#shop" class="btn btn-copper btn-md" style="width: 100%;">Explore Product — $47.00</a>
               </div>
             </div>
           </div>

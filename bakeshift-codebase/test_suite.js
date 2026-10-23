@@ -346,10 +346,10 @@ print("\n--- Test 3: Home -> Shop -> Product Details ---");
 app.navigateTo("shop", false);
 assert(
   app.currentRoute === "shop" &&
-  main.innerHTML.indexOf("$49.99") !== -1 &&
+  main.innerHTML.indexOf("$47.00") !== -1 &&
   main.innerHTML.indexOf("BAKESHIFT Complete Baking System") !== -1 &&
   main.innerHTML.indexOf("product-details") !== -1,
-  "Shop page renders with $49.99 fixed price, full product kit, and product details"
+  "Shop page renders with $47.00 fixed price, full product kit, and product details"
 );
 
 // --------------------------------------------------
@@ -375,10 +375,10 @@ assert(
 print("\n--- Test 5: Bag -> Change Quantity -> Verify Subtotal ---");
 var prodId = "bakeshift-complete-system";
 app.incrementItem(prodId);
-assert(main.innerHTML.indexOf("149.97") !== -1 || main.innerHTML.indexOf("Review your Bag") !== -1, "Quantity incremented and subtotal recalculated");
+assert(main.innerHTML.indexOf("141.00") !== -1 || main.innerHTML.indexOf("Review your Bag") !== -1, "Quantity incremented and subtotal recalculated");
 
 app.decrementItem(prodId);
-assert(main.innerHTML.indexOf("99.98") !== -1 || main.innerHTML.indexOf("Review your Bag") !== -1, "Quantity decremented and subtotal reflects 2 units ($99.98)");
+assert(main.innerHTML.indexOf("94.00") !== -1 || main.innerHTML.indexOf("Review your Bag") !== -1, "Quantity decremented and subtotal reflects 2 units ($94.00)");
 
 // --------------------------------------------------
 // Test 6: Bag -> Proceed to Checkout -> Checkout Preview
@@ -507,7 +507,7 @@ var routesToExpectedKeywords = {
   "explore": "3D Interactive",
   "how-it-works": "How BAKESHIFT Works",
   "specs": "DWG BS-001",
-  "shop": "$49.99",
+  "shop": "$47.00",
   "bag": "Review your Bag",
   "checkout-preview": "Checkout Preview",
   "story": "Our Mission",

@@ -1,14 +1,14 @@
 /**
  * BAKESHIFT Shopping Cart Engine
  * Real functioning client-side cart with LocalStorage persistence
- * Fixed demo price: $49.99 per unit
+ * Fixed demo price: $47.00 per unit
  */
 
 export const BAKESHIFT_PRODUCT = {
   id: 'bakeshift-complete-system',
   name: 'BAKESHIFT — Complete Baking System',
   slogan: 'BAKE MORE WITH LESS.',
-  price: 49.99,
+  price: 47.00,
   currency: 'USD',
   material: 'Heavy-Gauge Aluminized Steel',
   dimensions: '15" × 10" × 2" (381 × 254 × 50.8 mm)',
@@ -42,6 +42,9 @@ class CartStore {
       if (stored) {
         const parsed = JSON.parse(stored);
         this.items = Array.isArray(parsed) ? parsed : [];
+        this.items.forEach(item => {
+          if (item.id === BAKESHIFT_PRODUCT.id) item.price = BAKESHIFT_PRODUCT.price;
+        });
       } else {
         this.items = [];
       }
@@ -74,7 +77,7 @@ class CartStore {
     const totalCount = this.items.reduce((acc, item) => acc + item.quantity, 0);
     const subtotalRaw = this.items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
     const subtotal = Math.round(subtotalRaw * 100) / 100;
-    const shipping = totalCount > 0 ? 12.00 : 0.00;
+    const shipping = totalCount > 0 ? 2.00 : 0.00;
     const taxRate = 0.0825;
     const tax = totalCount > 0 ? Math.round(subtotal * taxRate * 100) / 100 : 0.00;
     const total = totalCount > 0 ? Math.round((subtotal + shipping + tax) * 100) / 100 : 0.00;
