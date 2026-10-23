@@ -1,14 +1,14 @@
 /**
  * BAKESHIFT Shopping Cart Engine
  * Real functioning client-side cart with LocalStorage persistence
- * Fixed demo price: $54.99 per unit
+ * Fixed demo price: $59.99 per unit
  */
 
 export const BAKESHIFT_PRODUCT = {
   id: 'bakeshift-complete-system',
   name: 'BAKESHIFT — Complete Baking System',
   slogan: 'BAKE MORE WITH LESS.',
-  price: 54.99,
+  price: 59.99,
   currency: 'USD',
   material: 'Heavy-Gauge Aluminized Steel',
   dimensions: '15" × 10" × 2" (381 × 254 × 50.8 mm)',

@@ -2,7 +2,7 @@
  * BAKESHIFT Main Application Controller (ES Module Version)
  * Full Apple-inspired interactive consumer product experience
  * Brand Slogan: BAKE MORE WITH LESS.
- * Retail Price: $54.99 USD
+ * Retail Price: $59.99 USD
  */
 
 import { BakeShift3DViewer } from './bakeshift3d.js';
@@ -196,7 +196,7 @@ export class BakeShiftApp {
         <div style="text-align: center; padding: 3rem 1rem; color: var(--color-muted-text);">
           <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-charcoal); font-weight: 600;">Your Bag is empty.</p>
           <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Explore the BAKESHIFT modular system and bake more with less.</p>
-          <a href="#shop" class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.closeDrawer()">Shop BAKESHIFT — $54.99</a>
+          <a href="#shop" class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.closeDrawer()">Shop BAKESHIFT — $59.99</a>
         </div>
       `;
       return;
@@ -288,7 +288,7 @@ export class BakeShiftApp {
 
     const state = cart.getState();
     const totalUnits = state.items.length > 0 ? state.totalCount : 1;
-    const totalFormatted = state.items.length > 0 ? state.totalFormatted : '$61.83';
+    const totalFormatted = state.items.length > 0 ? state.totalFormatted : '$67.24';
 
     if (payBtn) {
       payBtn.disabled = true;
@@ -453,7 +453,7 @@ export class BakeShiftApp {
             </p>
             <div class="hero-ctas">
               <a href="#explore" class="btn btn-primary btn-lg">Explore BAKESHIFT</a>
-              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy — $54.99</button>
+              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy — $59.99</button>
             </div>
           </div>
 
@@ -488,7 +488,7 @@ export class BakeShiftApp {
             <span class="spec-pill">2 Adjustable Bare-Metal Partitions</span>
             <span class="spec-pill">6 Total Wire Toggle Clasps</span>
             <span class="spec-pill" style="border-color: var(--color-copper); color: var(--color-copper);">Zero Silicone Grips</span>
-            <span class="spec-pill">$54.99 Complete System</span>
+            <span class="spec-pill">$59.99 Complete System</span>
           </div>
         </div>
       </section>
@@ -618,7 +618,7 @@ export class BakeShiftApp {
                   </div>
                   ${story.id === 'story-5' ? `
                     <div style="margin-top: 1.75rem;">
-                      <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $54.99</a>
+                      <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $59.99</a>
                     </div>
                   ` : ''}
                 </div>
@@ -660,7 +660,7 @@ export class BakeShiftApp {
                     Explore in 3D →
                   </button>
                   <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">
-                    Buy $54.99
+                    Buy $59.99
                   </button>
                 </div>
               </div>
@@ -693,20 +693,20 @@ export class BakeShiftApp {
             <div style="padding: 2.5rem; background: var(--color-cream-card); border-radius: var(--radius-lg); border: 2px solid var(--color-copper);">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.0rem;">
                 <h4 style="font-size: 1.25rem; color: var(--color-charcoal);">BAKESHIFT System</h4>
-                <span style="font-weight: 700; color: var(--color-copper);">$54.99 Fixed</span>
+                <span style="font-weight: 700; color: var(--color-copper);">$59.99 Fixed</span>
               </div>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.92rem; color: var(--color-charcoal);">
                 <li>✓ 1 modular pan configures to cupcakes, cakes, & loaves</li>
                 <li>✓ Ultra-slim 2.0" profile saves 70% cabinet space</li>
                 <li>✓ Heavy-gauge aluminized steel with zero warping</li>
                 <li>✓ Bare metal metallurgy: 100% PTFE/PFOA/Silicone-free</li>
-                <li>✓ Lifetime heirloom durability for just $54.99</li>
+                <li>✓ Lifetime heirloom durability for just $59.99</li>
               </ul>
             </div>
           </div>
 
           <div style="margin-top: 3.5rem;">
-            <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $54.99</button>
+            <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $59.99</button>
           </div>
         </div>
       </section>
@@ -930,10 +930,10 @@ export class BakeShiftApp {
           <div style="background: var(--color-white); border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: 3.0rem; text-align: center; box-shadow: 0 16px 36px var(--color-shadow);">
             <h2 style="font-size: 2.0rem; margin-bottom: 0.6rem;">Experience heirloom industrial bakeware.</h2>
             <p style="color: var(--color-muted-text); margin-bottom: 2.0rem; font-size: 1.05rem;">
-              Fixed retail kit price: <strong>$54.99 USD</strong>. Complete 6-item system.
+              Fixed retail kit price: <strong>$59.99 USD</strong>. Complete 6-item system.
             </p>
             <div style="display: flex; justify-content: center; gap: 1.0rem; flex-wrap: wrap;">
-              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy BAKESHIFT — $54.99</button>
+              <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Buy BAKESHIFT — $59.99</button>
               <a href="#features" class="btn btn-outline btn-lg">View Modular Features</a>
             </div>
           </div>
@@ -985,7 +985,7 @@ export class BakeShiftApp {
                     Inspect in 3D →
                   </a>
                   <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">
-                    Buy $54.99
+                    Buy $59.99
                   </button>
                 </div>
               </div>
@@ -996,7 +996,7 @@ export class BakeShiftApp {
           <div style="background: var(--color-cream-card); border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: 3.5rem 2.5rem; margin-bottom: 4.0rem; box-shadow: 0 4px 16px var(--color-shadow);">
             <div class="text-center" style="max-width: 650px; margin: 0 auto 3.0rem;">
               <span class="eyebrow">Space Reclamation</span>
-              <h2 style="font-size: 2.2rem; margin: 0.4rem 0;">Reclaim 70% of your cupboard space.</h2>
+              <h2 style="font-size: 2.2rem; margin-0.4rem 0;">Reclaim 70% of your cupboard space.</h2>
               <p style="color: var(--color-muted-text); font-size: 0.95rem;">
                 A single 2-inch slim profile replaces five bulky, stacking-hostile bakeware tins.
               </p>
@@ -1018,7 +1018,7 @@ export class BakeShiftApp {
               <div style="padding: 2.5rem; background: var(--color-white); border-radius: var(--radius-lg); border: 2px solid var(--color-copper);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.0rem;">
                   <h4 style="font-size: 1.25rem; color: var(--color-charcoal);">BAKESHIFT System</h4>
-                  <span style="font-weight: 700; color: var(--color-copper);">$54.99 Fixed</span>
+                  <span style="font-weight: 700; color: var(--color-copper);">$59.99 Fixed</span>
                 </div>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.92rem; color: var(--color-charcoal);">
                   <li>✓ 1 modular pan configures to cupcakes, cakes, & loaves</li>
@@ -1026,7 +1026,7 @@ export class BakeShiftApp {
                   <li>✓ All removable parts nest flush inside the base pan</li>
                   <li>✓ Heavy-gauge aluminized steel with zero warping</li>
                   <li>✓ Bare metal metallurgy: 100% PTFE/PFOA/Silicone-free</li>
-                  <li>✓ Lifetime heirloom durability for just $54.99</li>
+                  <li>✓ Lifetime heirloom durability for just $59.99</li>
                 </ul>
               </div>
             </div>
@@ -1034,7 +1034,7 @@ export class BakeShiftApp {
 
           <!-- Bottom CTA -->
           <div class="text-center" style="margin-top: 2.0rem;">
-            <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $54.99</button>
+            <button class="btn btn-copper btn-lg" onclick="window.bakeshiftApp.quickBuy()">Get BAKESHIFT for $59.99</button>
           </div>
         </div>
       </section>
@@ -1058,7 +1058,7 @@ export class BakeShiftApp {
             </div>
             <div style="display: flex; gap: 0.75rem;">
               <button class="btn btn-outline btn-sm" id="exploreResetBtn">Reset Model</button>
-              <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">Buy Now — $54.99</button>
+              <button class="btn btn-copper btn-sm" onclick="window.bakeshiftApp.quickBuy()">Buy Now — $59.99</button>
             </div>
           </div>
 
@@ -1149,7 +1149,7 @@ export class BakeShiftApp {
               </p>
             </div>
             <div style="display: flex; gap: 1.0rem; align-items: center;">
-              <span style="font-size: 1.4rem; font-weight: 700; color: var(--color-copper);">$54.99</span>
+              <span style="font-size: 1.4rem; font-weight: 700; color: var(--color-copper);">$59.99</span>
               <button class="btn btn-copper btn-md" onclick="window.bakeshiftApp.quickBuy()">Buy Kit</button>
             </div>
           </div>
@@ -1508,7 +1508,7 @@ export class BakeShiftApp {
           </div>
 
           <div class="text-center" style="margin-top: 3.0rem;">
-            <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $54.99</a>
+            <a href="#shop" class="btn btn-copper btn-lg">Shop BAKESHIFT — $59.99</a>
           </div>
         </div>
       </section>
@@ -1592,7 +1592,7 @@ export class BakeShiftApp {
 
               <!-- Price Row (NO FAKE DISCOUNTS) -->
               <div class="price-container">
-                <span class="price-val">$54.99</span>
+                <span class="price-val">$59.99</span>
                 <span style="font-size: 0.9rem; color: var(--color-muted-text);">USD · Complete System Kit</span>
               </div>
 
@@ -1605,7 +1605,7 @@ export class BakeShiftApp {
                     <span class="qty-display" id="shopQtyDisplay" style="font-size: 1.1rem; min-width: 36px;">1</span>
                     <button class="qty-btn" id="shopQtyPlus">+</button>
                   </div>
-                  <span id="shopTotalCalc" style="font-size: 1.1rem; font-weight: 700; color: var(--color-charcoal);">$54.99 Total</span>
+                  <span id="shopTotalCalc" style="font-size: 1.1rem; font-weight: 700; color: var(--color-charcoal);">$59.99 Total</span>
                 </div>
               </div>
 
@@ -1751,7 +1751,7 @@ export class BakeShiftApp {
               <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Your Bag is empty.</h3>
               <p style="color: var(--color-muted-text); margin-bottom: 2.0rem;">Explore the BAKESHIFT modular bakeware system and discover culinary freedom.</p>
               <div style="display: flex; justify-content: center; gap: 1.0rem; flex-wrap: wrap;">
-                <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $54.99</a>
+                <a href="#shop" class="btn btn-copper btn-md">Shop BAKESHIFT — $59.99</a>
                 <a href="#shop" class="btn btn-outline btn-md">Continue Shopping</a>
               </div>
             </div>
@@ -1825,10 +1825,10 @@ export class BakeShiftApp {
     this.checkoutMode = this.checkoutMode || 'preview';
     const state = cart.getState();
     const hasItems = state.items.length > 0;
-    const subtotalFormatted = hasItems ? state.subtotalFormatted : '$54.99';
+    const subtotalFormatted = hasItems ? state.subtotalFormatted : '$59.99';
     const shippingFormatted = hasItems ? state.shippingFormatted : '$2.30';
-    const taxFormatted = hasItems ? state.taxFormatted : '$4.54';
-    const totalFormatted = hasItems ? state.totalFormatted : '$61.83';
+    const taxFormatted = hasItems ? state.taxFormatted : '$4.95';
+    const totalFormatted = hasItems ? state.totalFormatted : '$67.24';
     const totalUnits = hasItems ? state.totalCount : 1;
 
     container.innerHTML = `
@@ -2021,7 +2021,7 @@ export class BakeShiftApp {
                     </div>
                     <div>
                       <div style="font-weight: 600; font-size: 0.95rem;">${BAKESHIFT_PRODUCT.name}</div>
-                      <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $54.99 each</div>
+                      <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $59.99 each</div>
                     </div>
                     <div style="margin-left: auto; font-weight: 700;">${subtotalFormatted}</div>
                   </div>
@@ -2137,7 +2137,7 @@ export class BakeShiftApp {
                     </div>
                     <div>
                       <div style="font-weight: 600; font-size: 0.95rem;">${BAKESHIFT_PRODUCT.name}</div>
-                      <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $54.99 each</div>
+                      <div style="font-size: 0.8rem; color: var(--color-muted-text);">Qty: ${totalUnits} · $59.99 each</div>
                     </div>
                     <div style="margin-left: auto; font-weight: 700;">${subtotalFormatted}</div>
                   </div>
@@ -2195,7 +2195,7 @@ export class BakeShiftApp {
           </div>
 
           <div class="text-center">
-            <a href="#shop" class="btn btn-copper btn-lg">Experience BAKESHIFT — $54.99</a>
+            <a href="#shop" class="btn btn-copper btn-lg">Experience BAKESHIFT — $59.99</a>
           </div>
         </div>
       </section>
@@ -2254,10 +2254,10 @@ export class BakeShiftApp {
               <div><strong>Brand:</strong> BAKESHIFT Inc.</div>
               <div><strong>Headquarters:</strong> Culinary Innovation Lab</div>
               <div><strong>Email:</strong> contact@bakeshift.com (Demonstration)</div>
-              <div><strong>Retail System:</strong> $54.99 USD Complete Baking System</div>
+              <div><strong>Retail System:</strong> $59.99 USD Complete Baking System</div>
             </div>
             <div style="margin-top: 2.0rem;">
-              <a href="#shop" class="btn btn-copper btn-md" style="width: 100%;">Explore Product — $54.99</a>
+              <a href="#shop" class="btn btn-copper btn-md" style="width: 100%;">Explore Product — $59.99</a>
             </div>
           </div>
         </div>
