@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#E2E4E6"/>
+      <stop offset="75%" stop-color="#CACDD0"/>
+      <stop offset="100%" stop-color="#9DA3A6"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2C6C9"/>
+      <stop offset="100%" stop-color="#DFE2E5"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D48C6B"/>
+      <stop offset="100%" stop-color="#B87352"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pan shadow -->
+  <ellipse cx="230" cy="225" rx="180" ry="20" fill="#25282B" opacity="0.08"/>
+
+  <!-- Pan Outer Body -->
+  <rect x="45" y="45" width="370" height="170" rx="26" fill="url(#panGrad)" stroke="#9DA3A6" stroke-width="2"/>
+  <rect x="56" y="55" width="348" height="150" rx="18" fill="url(#floorGrad)" stroke="#80868A" stroke-width="1.5"/>
+
+  <!-- Handles -->
+  <rect x="24" y="110" width="24" height="40" rx="8" fill="url(#panGrad)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="31" y="120" width="10" height="20" rx="4" fill="#F7F3EE"/>
+  <rect x="412" y="110" width="24" height="40" rx="8" fill="url(#panGrad)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="419" y="120" width="10" height="20" rx="4" fill="#F7F3EE"/>
+
+  <!-- 1-inch Laser Alignment Marks -->
+  <g stroke="#333639" stroke-width="1.5" opacity="0.75">
+    <line x1="110" y1="45" x2="110" y2="51"/>
+    <line x1="145" y1="45" x2="145" y2="51"/>
+    <line x1="180" y1="45" x2="180" y2="53" stroke="url(#copper)" stroke-width="2"/>
+    <line x1="215" y1="45" x2="215" y2="51"/>
+    <line x1="250" y1="45" x2="250" y2="51"/>
+    <line x1="285" y1="45" x2="285" y2="53" stroke="url(#copper)" stroke-width="2"/>
+    <line x1="320" y1="45" x2="320" y2="51"/>
+    <line x1="355" y1="45" x2="355" y2="51"/>
+  </g>
+
+  <!-- Dimensions Indicator Callout -->
+  <rect x="145" y="110" width="170" height="40" rx="20" fill="#FFFFFF" stroke="#B87352" stroke-width="1.5" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.06))"/>
+  <text x="230" y="127" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="700" fill="#25282B" text-anchor="middle">
+    15" × 10" × 2" BASE
+  </text>
+  <text x="230" y="142" font-family="-apple-system, Inter, sans-serif" font-size="10" fill="#B87352" text-anchor="middle">
+    Uninterrupted Flat Floor
+  </text>
+</svg>

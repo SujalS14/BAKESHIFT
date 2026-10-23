@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#E2E4E6"/>
+      <stop offset="100%" stop-color="#9DA3A6"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E09C7B"/>
+      <stop offset="50%" stop-color="#B87352"/>
+      <stop offset="100%" stop-color="#8E4828"/>
+    </linearGradient>
+    <linearGradient id="wireGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#B8BDBF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pan Rolled Rim Section -->
+  <rect x="30" y="50" width="220" height="28" rx="8" fill="url(#steelGrad)" stroke="#7A8084" stroke-width="2"/>
+  <rect x="40" y="76" width="30" height="150" fill="url(#steelGrad)" stroke="#7A8084" stroke-width="2"/>
+
+  <!-- Partition Sheet Section -->
+  <rect x="180" y="70" width="16" height="150" fill="url(#steelGrad)" stroke="#7A8084" stroke-width="2"/>
+  <ellipse cx="188" cy="70" rx="8" ry="5" fill="#FFFFFF"/>
+
+  <!-- Copper Mounting Bracket & Rivets -->
+  <rect x="165" y="80" width="46" height="50" rx="6" fill="url(#copper)" stroke="#6A3A22" stroke-width="1.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.2))"/>
+  <circle cx="188" cy="92" r="4" fill="#E8B096" stroke="#4A2614" stroke-width="1"/>
+  <circle cx="188" cy="118" r="4" fill="#E8B096" stroke="#4A2614" stroke-width="1"/>
+
+  <!-- Stainless Wire Bail Loop (Clamped over Rim) -->
+  <path d="M172 105 C172 65, 140 38, 110 38 C80 38, 70 55, 70 65" fill="none" stroke="url(#wireGrad)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Hinged Toggle Lever Arm (Down/Locked Position) -->
+  <rect x="176" y="98" width="24" height="65" rx="5" fill="url(#steelGrad)" stroke="#606669" stroke-width="2" filter="drop-shadow(0 6px 10px rgba(0,0,0,0.2))"/>
+  <circle cx="188" cy="106" r="3.5" fill="#B87352"/>
+
+  <!-- Tension Force Annotation -->
+  <g stroke="#B87352" stroke-width="2" fill="none">
+    <path d="M188 175 L188 195 M183 190 L188 195 L193 190"/>
+  </g>
+  <text x="188" y="215" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#B87352" text-anchor="middle">
+    CAM LOCK TENSION
+  </text>
+
+  <!-- Explanation Card -->
+  <rect x="250" y="75" width="180" height="110" rx="14" fill="#FFFFFF" stroke="#B87352" stroke-width="1.5" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.06))"/>
+  <text x="340" y="105" font-family="-apple-system, Inter, sans-serif" font-size="13" font-weight="700" fill="#25282B" text-anchor="middle">
+    Stainless Wire Toggle
+  </text>
+  <text x="340" y="125" font-family="-apple-system, Inter, sans-serif" font-size="10" fill="#6E7175" text-anchor="middle">
+    304 Stainless Steel Bail
+  </text>
+  <text x="340" y="142" font-family="-apple-system, Inter, sans-serif" font-size="10" fill="#6E7175" text-anchor="middle">
+    Copper Accent Rivets
+  </text>
+  <text x="340" y="162" font-family="-apple-system, Inter, sans-serif" font-size="10" font-weight="700" fill="#B87352" text-anchor="middle">
+    ZERO SILICONE GRIPS
+  </text>
+</svg>

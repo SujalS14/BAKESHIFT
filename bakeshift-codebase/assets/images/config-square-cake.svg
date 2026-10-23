@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#E2E4E6"/>
+      <stop offset="70%" stop-color="#CACDD0"/>
+      <stop offset="100%" stop-color="#B0B4B8"/>
+    </linearGradient>
+    <linearGradient id="innerSteel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CACDD0"/>
+      <stop offset="100%" stop-color="#DCE0E3"/>
+    </linearGradient>
+    <linearGradient id="copperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D48C6B"/>
+      <stop offset="50%" stop-color="#B87352"/>
+      <stop offset="100%" stop-color="#8E4828"/>
+    </linearGradient>
+    <linearGradient id="cakeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2C68A"/>
+      <stop offset="100%" stop-color="#D89B48"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#25282B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="275" rx="200" ry="25" fill="#25282B" opacity="0.08"/>
+
+  <!-- Base Pan Outer Rim -->
+  <g filter="url(#softShadow)">
+    <rect x="50" y="70" width="400" height="190" rx="28" fill="url(#panSteel)" stroke="#A0A5A8" stroke-width="2"/>
+    <rect x="62" y="80" width="376" height="170" rx="20" fill="url(#innerSteel)" stroke="#888E92" stroke-width="1.5"/>
+  </g>
+
+  <!-- Side Handles -->
+  <rect x="26" y="145" width="28" height="40" rx="10" fill="url(#panSteel)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="34" y="155" width="12" height="20" rx="5" fill="#E8EAEB"/>
+  <rect x="446" y="145" width="28" height="40" rx="10" fill="url(#panSteel)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="454" y="155" width="12" height="20" rx="5" fill="#E8EAEB"/>
+
+  <!-- 9" x 9" Square Baking Zone (from X=62 to X=232, width=170, height=170) -->
+  <rect x="62" y="80" width="170" height="170" rx="18" fill="url(#cakeGold)" opacity="0.85"/>
+  <rect x="68" y="86" width="158" height="158" rx="14" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Partition 1 at 9-inch position (X=232) -->
+  <g>
+    <rect x="230" y="80" width="7" height="170" fill="url(#panSteel)" stroke="#7A8084" stroke-width="1"/>
+    <!-- Wire Toggle Clasps -->
+    <rect x="227" y="72" width="13" height="14" rx="2" fill="url(#copperGrad)"/>
+    <circle cx="233.5" cy="79" r="2.5" fill="#FFFFFF"/>
+    <rect x="227" y="244" width="13" height="14" rx="2" fill="url(#copperGrad)"/>
+    <circle cx="233.5" cy="251" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Dimension Indicator Lines -->
+  <g stroke="#B87352" stroke-width="1.5">
+    <!-- Horizontal 9" line -->
+    <line x1="62" y1="56" x2="232" y2="56"/>
+    <line x1="62" y1="50" x2="62" y2="62"/>
+    <line x1="232" y1="50" x2="232" y2="62"/>
+    
+    <!-- Vertical 9" line -->
+    <line x1="42" y1="80" x2="42" y2="250"/>
+    <line x1="36" y1="80" x2="48" y2="80"/>
+    <line x1="36" y1="250" x2="48" y2="250"/>
+  </g>
+
+  <text x="147" y="48" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#B87352" text-anchor="middle">
+    9.0 INCHES (81 SQ IN)
+  </text>
+  <text x="147" y="165" font-family="-apple-system, Inter, sans-serif" font-size="14" font-weight="700" fill="#25282B" text-anchor="middle">
+    9" × 9" SQUARE CAKE
+  </text>
+  <text x="147" y="185" font-family="-apple-system, Inter, sans-serif" font-size="11" fill="#4A4E51" text-anchor="middle">
+    Brownies & Sheet Cakes
+  </text>
+
+  <!-- Right Unused Storage Bay -->
+  <text x="335" y="165" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="600" fill="#888E92" text-anchor="middle">
+    ADAPTIVE STORAGE BAY
+  </text>
+</svg>

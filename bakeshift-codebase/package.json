@@ -1,0 +1,24 @@
+{
+  "name": "bakeshift-web",
+  "version": "1.0.0",
+  "description": "BAKESHIFT — Apple-Inspired Modular Baking System with Stripe Sandbox Integration",
+  "private": true,
+  "scripts": {
+    "start": "ruby server.rb",
+    "test": "/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc test_suite.js"
+  },
+  "dependencies": {
+    "stripe": "^17.7.0",
+    "@stripe/stripe-js": "^5.6.0",
+    "@stripe/react-stripe-js": "^3.1.1"
+  },
+  "keywords": [
+    "bakeshift",
+    "stripe-sandbox",
+    "stripe-checkout",
+    "threejs",
+    "bakeware"
+  ],
+  "author": "BAKESHIFT Engineering",
+  "license": "UNLICENSED"
+}

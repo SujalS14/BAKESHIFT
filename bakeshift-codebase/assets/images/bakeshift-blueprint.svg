@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueprintBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E232A"/>
+      <stop offset="100%" stop-color="#14171A"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2D333B" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <!-- Blueprint Background -->
+  <rect width="100%" height="100%" fill="url(#blueprintBg)" rx="16"/>
+  <rect width="100%" height="100%" fill="url(#grid)" rx="16"/>
+
+  <!-- Border Frame -->
+  <rect x="15" y="15" width="730" height="410" fill="none" stroke="#B87352" stroke-width="1.5" opacity="0.6" rx="10"/>
+
+  <!-- Title Block -->
+  <g transform="translate(480, 340)">
+    <rect x="0" y="0" width="240" height="70" fill="#252A30" stroke="#B87352" stroke-width="1"/>
+    <text x="12" y="22" font-family="'SF Mono', Menlo, monospace" font-size="11" font-weight="700" fill="#B87352">BAKESHIFT MODULAR SYSTEM</text>
+    <text x="12" y="38" font-family="'SF Mono', Menlo, monospace" font-size="9" fill="#9DA3A6">DWG NO: BKS-15102-REV4</text>
+    <text x="12" y="52" font-family="'SF Mono', Menlo, monospace" font-size="9" fill="#9DA3A6">MATERIAL: AL-SI ALUMINIZED STEEL</text>
+  </g>
+
+  <!-- MAIN PAN TOP BLUEPRINT OUTLINE (Center at X=360, Y=180) -->
+  <!-- Exterior: 15" x 10" (scaled to 450 x 240) -->
+  <g stroke="#64B5F6" stroke-width="2" fill="none">
+    <rect x="120" y="60" width="450" height="240" rx="30"/>
+    <rect x="145" y="75" width="400" height="210" rx="20" stroke="#90CAF9" stroke-width="1.5"/>
+  </g>
+
+  <!-- Side Handles -->
+  <g stroke="#64B5F6" stroke-width="1.5" fill="none">
+    <path d="M120 150 L95 150 A15 15 0 0 0 95 210 L120 210"/>
+    <path d="M570 150 L595 150 A15 15 0 0 1 595 210 L570 210"/>
+  </g>
+
+  <!-- 1-Inch Spaced Rim Marks -->
+  <g stroke="#FFB74D" stroke-width="1.5">
+    <line x1="180" y1="56" x2="180" y2="64"/>
+    <line x1="210" y1="56" x2="210" y2="64"/>
+    <line x1="240" y1="54" x2="240" y2="66" stroke-width="2"/>
+    <line x1="270" y1="56" x2="270" y2="64"/>
+    <line x1="300" y1="56" x2="300" y2="64"/>
+    <line x1="330" y1="54" x2="330" y2="66" stroke-width="2"/>
+    <line x1="360" y1="56" x2="360" y2="64"/>
+    <line x1="390" y1="56" x2="390" y2="64"/>
+    <line x1="420" y1="54" x2="420" y2="66" stroke-width="2"/>
+    <line x1="450" y1="56" x2="450" y2="64"/>
+    <line x1="480" y1="56" x2="480" y2="64"/>
+    <line x1="510" y1="54" x2="510" y2="66" stroke-width="2"/>
+  </g>
+
+  <!-- 2x3 Cupcake Tray Insert (Left bay) -->
+  <g stroke="#81C784" stroke-width="1.5" fill="none">
+    <rect x="150" y="80" width="170" height="200" rx="14"/>
+    <!-- 6 wells -->
+    <circle cx="195" cy="115" r="24"/>
+    <circle cx="195" cy="180" r="24"/>
+    <circle cx="195" cy="245" r="24"/>
+    <circle cx="275" cy="115" r="24"/>
+    <circle cx="275" cy="180" r="24"/>
+    <circle cx="275" cy="245" r="24"/>
+  </g>
+
+  <!-- Partition 1 at X=340 -->
+  <g stroke="#FF8A65" stroke-width="2">
+    <line x1="340" y1="75" x2="340" y2="285"/>
+    <rect x="334" y="68" width="12" height="12" fill="#B87352"/>
+    <rect x="334" y="280" width="12" height="12" fill="#B87352"/>
+  </g>
+
+  <!-- Partition 2 at X=440 -->
+  <g stroke="#FF8A65" stroke-width="2">
+    <line x1="440" y1="75" x2="440" y2="285"/>
+    <rect x="434" y="68" width="12" height="12" fill="#B87352"/>
+    <rect x="434" y="280" width="12" height="12" fill="#B87352"/>
+  </g>
+
+  <!-- DIMENSION LEADER LINES (CYAN) -->
+  <g stroke="#4DD0E1" stroke-width="1" stroke-dasharray="3,3" fill="none">
+    <!-- 15.0" Length Top Line -->
+    <line x1="120" y1="40" x2="570" y2="40"/>
+    <line x1="120" y1="35" x2="120" y2="60"/>
+    <line x1="570" y1="35" x2="570" y2="60"/>
+
+    <!-- 10.0" Width Left Line -->
+    <line x1="75" y1="60" x2="75" y2="300"/>
+    <line x1="70" y1="60" x2="120" y2="60"/>
+    <line x1="70" y1="300" x2="120" y2="300"/>
+  </g>
+
+  <text x="345" y="34" font-family="'SF Mono', Menlo, monospace" font-size="11" font-weight="700" fill="#4DD0E1" text-anchor="middle">
+    15.00" EXTERIOR LENGTH (381 mm)
+  </text>
+  <text x="65" y="185" font-family="'SF Mono', Menlo, monospace" font-size="11" font-weight="700" fill="#4DD0E1" text-anchor="middle" transform="rotate(-90 65 185)">
+    10.00" EXTERIOR WIDTH (254 mm)
+  </text>
+
+  <!-- Sub-callouts -->
+  <text x="235" y="295" font-family="'SF Mono', Menlo, monospace" font-size="10" fill="#81C784" text-anchor="middle">
+    6-CUP INSERT (2×3 GRID, 6.25" × 8.70")
+  </text>
+  <text x="390" y="320" font-family="'SF Mono', Menlo, monospace" font-size="10" fill="#FF8A65" text-anchor="middle">
+    DUAL PARTITIONS (8.9" × 1.65", NO SILICONE)
+  </text>
+</svg>

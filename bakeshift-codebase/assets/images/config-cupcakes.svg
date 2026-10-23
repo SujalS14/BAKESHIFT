@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#E2E4E6"/>
+      <stop offset="70%" stop-color="#CACDD0"/>
+      <stop offset="100%" stop-color="#B0B4B8"/>
+    </linearGradient>
+    <linearGradient id="innerSteel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CACDD0"/>
+      <stop offset="100%" stop-color="#DCE0E3"/>
+    </linearGradient>
+    <linearGradient id="copperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D48C6B"/>
+      <stop offset="50%" stop-color="#B87352"/>
+      <stop offset="100%" stop-color="#8E4828"/>
+    </linearGradient>
+    <linearGradient id="muffinGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6A85C"/>
+      <stop offset="60%" stop-color="#C8863A"/>
+      <stop offset="100%" stop-color="#9C5A18"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#25282B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Pan Shadow -->
+  <ellipse cx="250" cy="275" rx="200" ry="25" fill="#25282B" opacity="0.08"/>
+
+  <!-- Base Pan Outer Rim -->
+  <g filter="url(#softShadow)">
+    <rect x="50" y="70" width="400" height="190" rx="28" fill="url(#panSteel)" stroke="#A0A5A8" stroke-width="2"/>
+    <rect x="62" y="80" width="376" height="170" rx="20" fill="url(#innerSteel)" stroke="#888E92" stroke-width="1.5"/>
+  </g>
+
+  <!-- Left Side Handle -->
+  <rect x="26" y="145" width="28" height="40" rx="10" fill="url(#panSteel)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="34" y="155" width="12" height="20" rx="5" fill="#E8EAEB"/>
+
+  <!-- Right Side Handle -->
+  <rect x="446" y="145" width="28" height="40" rx="10" fill="url(#panSteel)" stroke="#888E92" stroke-width="1.5"/>
+  <rect x="454" y="155" width="12" height="20" rx="5" fill="#E8EAEB"/>
+
+  <!-- 1-inch Rim Marks -->
+  <g stroke="#333639" stroke-width="1.5" opacity="0.7">
+    <line x1="120" y1="70" x2="120" y2="76"/>
+    <line x1="160" y1="70" x2="160" y2="76"/>
+    <line x1="200" y1="70" x2="200" y2="78" stroke="url(#copperGrad)" stroke-width="2"/>
+    <line x1="240" y1="70" x2="240" y2="76"/>
+    <line x1="280" y1="70" x2="280" y2="76"/>
+    <line x1="320" y1="70" x2="320" y2="78" stroke="url(#copperGrad)" stroke-width="2"/>
+    <line x1="360" y1="70" x2="360" y2="76"/>
+  </g>
+
+  <!-- Cupcake Tray (6.25" x 8.70" Insert) -->
+  <g>
+    <rect x="70" y="86" width="165" height="158" rx="12" fill="url(#panSteel)" stroke="#9DA3A6" stroke-width="1.5"/>
+    
+    <!-- Tray Clasps (Top & Bottom) -->
+    <rect x="145" y="74" width="16" height="15" rx="3" fill="url(#copperGrad)"/>
+    <circle cx="153" cy="81" r="2" fill="#FFFFFF"/>
+    <rect x="145" y="241" width="16" height="15" rx="3" fill="url(#copperGrad)"/>
+    <circle cx="153" cy="248" r="2" fill="#FFFFFF"/>
+
+    <!-- EXACTLY SIX CUPCAKE WELLS: 2 COLUMNS x 3 ROWS -->
+    <!-- Column 1 -->
+    <g>
+      <!-- Well 1,1 -->
+      <circle cx="112" cy="115" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="112" cy="114" r="22" fill="#FAF3E6"/>
+      <circle cx="112" cy="112" r="19" fill="url(#muffinGold)"/>
+      <path d="M106 108 Q112 104 118 108" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+      <!-- Well 1,2 -->
+      <circle cx="112" cy="165" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="112" cy="164" r="22" fill="#FAF3E6"/>
+      <circle cx="112" cy="162" r="19" fill="url(#muffinGold)"/>
+      <path d="M106 158 Q112 154 118 158" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+      <!-- Well 1,3 -->
+      <circle cx="112" cy="215" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="112" cy="214" r="22" fill="#FAF3E6"/>
+      <circle cx="112" cy="212" r="19" fill="url(#muffinGold)"/>
+      <path d="M106 208 Q112 204 118 208" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+    </g>
+
+    <!-- Column 2 -->
+    <g>
+      <!-- Well 2,1 -->
+      <circle cx="188" cy="115" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="188" cy="114" r="22" fill="#FAF3E6"/>
+      <circle cx="188" cy="112" r="19" fill="url(#muffinGold)"/>
+      <path d="M182 108 Q188 104 194 108" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+      <!-- Well 2,2 -->
+      <circle cx="188" cy="165" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="188" cy="164" r="22" fill="#FAF3E6"/>
+      <circle cx="188" cy="162" r="19" fill="url(#muffinGold)"/>
+      <path d="M182 158 Q188 154 194 158" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+      <!-- Well 2,3 -->
+      <circle cx="188" cy="215" r="24" fill="#B0B4B8" stroke="#7A8084" stroke-width="1.5"/>
+      <circle cx="188" cy="214" r="22" fill="#FAF3E6"/>
+      <circle cx="188" cy="212" r="19" fill="url(#muffinGold)"/>
+      <path d="M182 208 Q188 204 194 208" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Partition 1 (at X = 255) -->
+  <g>
+    <rect x="252" y="80" width="6" height="170" fill="url(#panSteel)" stroke="#888E92" stroke-width="1"/>
+    <!-- Clasps -->
+    <rect x="249" y="74" width="12" height="10" rx="2" fill="url(#copperGrad)"/>
+    <rect x="249" y="246" width="12" height="10" rx="2" fill="url(#copperGrad)"/>
+  </g>
+
+  <!-- Open Baking Bay Label -->
+  <text x="340" y="165" font-family="-apple-system, Inter, sans-serif" font-size="12" font-weight="600" fill="#6E7175" text-anchor="middle">
+    COMPANION BAKE BAY
+  </text>
+  <text x="340" y="182" font-family="-apple-system, Inter, sans-serif" font-size="10" fill="#9DA3A6" text-anchor="middle">
+    Brownies, Bread, or Roasts
+  </text>
+
+  <!-- Dimension Badge -->
+  <rect x="74" y="25" width="156" height="24" rx="12" fill="#FAF7F2" stroke="#B87352" stroke-width="1.5"/>
+  <text x="152" y="41" font-family="-apple-system, Inter, sans-serif" font-size="11" font-weight="700" fill="#B87352" text-anchor="middle">
+    2 × 3 GRID — 6 WELLS
+  </text>
+</svg>

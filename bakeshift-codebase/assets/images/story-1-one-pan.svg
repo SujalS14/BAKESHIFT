@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F2EDE4"/>
+    </linearGradient>
+    <linearGradient id="panSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#E6E8EA"/>
+      <stop offset="70%" stop-color="#C2C6CA"/>
+      <stop offset="100%" stop-color="#9DA3A6"/>
+    </linearGradient>
+    <linearGradient id="panFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8CCD0"/>
+      <stop offset="100%" stop-color="#E2E5E8"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E09C7B"/>
+      <stop offset="50%" stop-color="#B87352"/>
+      <stop offset="100%" stop-color="#8E4828"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#25282B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20"/>
+
+  <!-- Pan Drop Shadow -->
+  <ellipse cx="270" cy="305" rx="220" ry="24" fill="#25282B" opacity="0.10"/>
+
+  <!-- Isometric Base Pan Group -->
+  <g filter="url(#cardShadow)">
+    <!-- Pan Outer Rim (15" x 10" x 2") -->
+    <rect x="55" y="75" width="430" height="210" rx="30" fill="url(#panSteel)" stroke="#888E92" stroke-width="2"/>
+    <!-- Pan Floor (13.2" x 9.0" Flat Floor) -->
+    <rect x="70" y="88" width="400" height="184" rx="20" fill="url(#panFloor)" stroke="#7A8084" stroke-width="1.5"/>
+  </g>
+
+  <!-- Side Handles -->
+  <g fill="url(#panSteel)" stroke="#80868A" stroke-width="1.5">
+    <!-- Left Handle -->
+    <rect x="28" y="160" width="30" height="42" rx="9"/>
+    <rect x="36" y="170" width="14" height="22" rx="4" fill="#F2EDE4"/>
+    <!-- Right Handle -->
+    <rect x="482" y="160" width="30" height="42" rx="9"/>
+    <rect x="490" y="170" width="14" height="22" rx="4" fill="#F2EDE4"/>
+  </g>
+
+  <!-- 1-Inch Spaced Alignment Grooves Along Long Rim (2mm width, 0.3mm depth) -->
+  <g stroke="#333639" stroke-width="1.8" opacity="0.8">
+    <line x1="120" y1="75" x2="120" y2="82"/>
+    <line x1="155" y1="75" x2="155" y2="82"/>
+    <line x1="190" y1="75" x2="190" y2="82"/>
+    <line x1="225" y1="75" x2="225" y2="84" stroke="url(#copper)" stroke-width="2.5"/>
+    <line x1="260" y1="75" x2="260" y2="82"/>
+    <line x1="295" y1="75" x2="295" y2="82"/>
+    <line x1="330" y1="75" x2="330" y2="84" stroke="url(#copper)" stroke-width="2.5"/>
+    <line x1="365" y1="75" x2="365" y2="82"/>
+    <line x1="400" y1="75" x2="400" y2="82"/>
+
+    <!-- Bottom Rim Guides -->
+    <line x1="120" y1="278" x2="120" y2="285"/>
+    <line x1="155" y1="278" x2="155" y2="285"/>
+    <line x1="190" y1="278" x2="190" y2="285"/>
+    <line x1="225" y1="276" x2="225" y2="285" stroke="url(#copper)" stroke-width="2.5"/>
+    <line x1="260" y1="278" x2="260" y2="285"/>
+    <line x1="295" y1="278" x2="295" y2="285"/>
+    <line x1="330" y1="276" x2="330" y2="285" stroke="url(#copper)" stroke-width="2.5"/>
+    <line x1="365" y1="278" x2="365" y2="285"/>
+    <line x1="400" y1="278" x2="400" y2="285"/>
+  </g>
+
+  <!-- Dimension Indicator Callouts -->
+  <!-- Length Callout -->
+  <g stroke="#B87352" stroke-width="1.5">
+    <line x1="55" y1="52" x2="485" y2="52"/>
+    <line x1="55" y1="46" x2="55" y2="58"/>
+    <line x1="485" y1="46" x2="485" y2="58"/>
+  </g>
+  <rect x="200" y="38" width="140" height="26" rx="13" fill="#FFFFFF" stroke="#B87352" stroke-width="1.2"/>
+  <text x="270" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" font-weight="700" fill="#25282B" text-anchor="middle">
+    15 in [381 mm] OVERALL
+  </text>
+
+  <!-- Interior Badge in Center -->
+  <g filter="url(#cardShadow)">
+    <rect x="145" y="145" width="250" height="70" rx="16" fill="#FFFFFF" stroke="#E2E4E6" stroke-width="1"/>
+    <text x="270" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="14" font-weight="700" fill="#25282B" text-anchor="middle">
+      13.2" × 9.0" Flat Floor
+    </text>
+    <text x="270" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#B87352" font-weight="600" text-anchor="middle">
+      Commercial Aluminized Steel • 2" Depth
+    </text>
+  </g>
+
+  <!-- Floating Feature Tags -->
+  <g transform="translate(60, 316)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="#FFFFFF" stroke="#D0D4D8"/>
+    <text x="65" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#606669" text-anchor="middle">Rounded Corners</text>
+  </g>
+  <g transform="translate(205, 316)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="#FFFFFF" stroke="#D0D4D8"/>
+    <text x="65" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#606669" text-anchor="middle">No Fixed Dividers</text>
+  </g>
+  <g transform="translate(350, 316)">
+    <rect x="0" y="0" width="130" height="24" rx="12" fill="#FFFFFF" stroke="#D0D4D8"/>
+    <text x="65" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#B87352" text-anchor="middle">Oven Safe 450°F</text>
+  </g>
+</svg>
