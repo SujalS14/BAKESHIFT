@@ -1,7 +1,7 @@
 /**
  * BAKESHIFT Product Data, Specifications, Stories & FAQs
  * Brand Slogan: BAKE MORE WITH LESS.
- * Base Price: $59.99 USD
+ * Base Price: $55.00 USD
  */
 
 export const BRAND = {
@@ -9,7 +9,7 @@ export const BRAND = {
   slogan: 'BAKE MORE WITH LESS.',
   subheading: 'One pan. Endless possibilities.',
   description: 'Meet BAKESHIFT — one innovative baking system designed to bring flexibility, convenience, and creativity into your kitchen.',
-  price: 59.99,
+  price: 55.00,
   currency: 'USD',
   colors: {
     primaryBg: '#FFFFFF',
@@ -29,7 +29,7 @@ export const BAKESHIFT_PRODUCT = {
   slogan: 'BAKE MORE WITH LESS.',
   subheading: 'One pan. Endless possibilities.',
   description: 'Meet BAKESHIFT — one innovative baking system designed to bring flexibility, convenience, and creativity into your kitchen.',
-  price: 59.99,
+  price: 55.00,
   currency: 'USD',
   material: 'Heavy-Gauge Commercial Aluminized Steel & 304 Stainless Steel',
   dimensions: '15" × 10" × 2" (381 × 254 × 50.8 mm)',
@@ -165,7 +165,7 @@ export const SCROLL_STORIES = [
     stats: [
       { label: 'Replaces', value: '5+ Bulky Tins' },
       { label: 'Cabinet Savings', value: 'Over 70% Space' },
-      { label: 'Complete System', value: '$59.99 Fixed' }
+      { label: 'Complete System', value: '$55.00 Fixed' }
     ]
   }
 ];
@@ -173,7 +173,7 @@ export const SCROLL_STORIES = [
 export const TECHNICAL_SPECS = {
   general: [
     { label: 'Product Name', value: 'BAKESHIFT Complete Baking System' },
-    { label: 'Retail Price', value: '$59.99 USD (Complete Kit)' },
+    { label: 'Retail Price', value: '$55.00 USD (Complete Kit)' },
     { label: 'Official Slogan', value: 'BAKE MORE WITH LESS.' },
     { label: 'Pan Architecture', value: 'Modular baking system with removable 6-cup tray & 2 adjustable partitions' }
   ],
@@ -237,7 +237,7 @@ export const FAQS = [
   },
   {
     q: 'What is the retail price and what is included in the box?',
-    a: 'The final retail price is $59.99 USD for the complete kit. The package includes: (1) aluminized-steel base pan (15×10×2 in), (1) removable six-cup cupcake tray (2×3 grid), (2) adjustable bare-metal partitions, (6) mounted toggle clasps, and a quick-start configuration guide.'
+    a: 'The final retail price is $55.00 USD for the complete kit. The package includes: (1) aluminized-steel base pan (15×10×2 in), (1) removable six-cup cupcake tray (2×3 grid), (2) adjustable bare-metal partitions, (6) mounted toggle clasps, and a quick-start configuration guide.'
   },
   {
     q: 'Is this website ready to process customer orders?',

@@ -96,7 +96,7 @@ loop do
           priceId: price_id,
           testMode: true,
           productName: 'BAKESHIFT Complete Baking System',
-          unitPrice: 59.99,
+          unitPrice: 55.00,
           currency: 'usd'
         })
         next
@@ -148,7 +148,7 @@ loop do
               form_params['line_items[0][price]'] = price_id
             else
               form_params['line_items[0][price_data][currency]'] = 'usd'
-              form_params['line_items[0][price_data][unit_amount]'] = '5999' # $59.99 USD
+              form_params['line_items[0][price_data][unit_amount]'] = '5500' # $55.00 USD
               form_params['line_items[0][price_data][product_data][name]'] = 'BAKESHIFT Complete Baking System'
               form_params['line_items[0][price_data][product_data][description]'] = 'Modular aluminized-steel bakeware system'
             end
@@ -164,7 +164,7 @@ loop do
                 testMode: true,
                 livemode: false,
                 quantity: quantity,
-                subtotal: (59.99 * quantity).round(2)
+                subtotal: (55.00 * quantity).round(2)
               })
               next
             else
@@ -177,8 +177,8 @@ loop do
                 testMode: true,
                 warning: err_msg,
                 quantity: quantity,
-                unitPrice: 59.99,
-                subtotal: (59.99 * quantity).round(2)
+                unitPrice: 55.00,
+                subtotal: (55.00 * quantity).round(2)
               })
               next
             end
@@ -190,8 +190,8 @@ loop do
               sandboxDemo: true,
               testMode: true,
               quantity: quantity,
-              unitPrice: 59.99,
-              subtotal: (59.99 * quantity).round(2),
+              unitPrice: 55.00,
+              subtotal: (55.00 * quantity).round(2),
               note: "Sandbox simulated session (Network: #{err.message})"
             })
             next
@@ -204,8 +204,8 @@ loop do
             sandboxDemo: true,
             testMode: true,
             quantity: quantity,
-            unitPrice: 59.99,
-            subtotal: (59.99 * quantity).round(2),
+            unitPrice: 55.00,
+            subtotal: (55.00 * quantity).round(2),
             currency: 'usd',
             product: 'BAKESHIFT Complete Baking System'
           })
