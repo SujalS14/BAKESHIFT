@@ -307,6 +307,11 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
         const stored = localStorage.getItem(this.storageKey);
         const parsed = stored ? JSON.parse(stored) : [];
         this.items = Array.isArray(parsed) ? parsed : [];
+        this.items.forEach(item => {
+          if (item.id === BAKESHIFT_PRODUCT.id || item.price !== BAKESHIFT_PRODUCT.price) {
+            item.price = BAKESHIFT_PRODUCT.price;
+          }
+        });
       } catch (e) {
         this.items = [];
       }
@@ -3515,7 +3520,7 @@ BAKESHIFT is not a gimmick coated with fragile non-stick chemicals. It is heirlo
 
       const updateShopTotal = () => {
         display.textContent = this.selectedShopQty;
-        totalEl.textContent = `$${(47.00 * this.selectedShopQty).toFixed(2)} Total`;
+        totalEl.textContent = `$${(BAKESHIFT_PRODUCT.price * this.selectedShopQty).toFixed(2)} Total`;
       };
 
       if (minusBtn) minusBtn.addEventListener('click', () => { if (this.selectedShopQty > 1) { this.selectedShopQty--; updateShopTotal(); } });

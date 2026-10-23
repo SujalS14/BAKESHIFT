@@ -1,7 +1,7 @@
 # BAKESHIFT — Apple-Inspired Interactive Product Website
 
 > **Official Brand Slogan: BAKE MORE WITH LESS.**  
-> **Fixed Kit Price: $49.99 USD**  
+> **Fixed Kit Price: $47.00 USD**  
 > **Product: Modular Baking Pan with Removable Cupcake Tray and Two Independently Adjustable Partitions**  
 > **Materials: Commercial Aluminized Steel & AISI 304 Stainless-Steel Wire Toggle Clasps**
 
@@ -83,14 +83,14 @@ All visualizations (hero render, 3D configurator, exploded view, product gallery
    - Full-screen hero with bold headline: **"BAKE MORE WITH LESS."**
    - Subheading: *"One pan. Endless possibilities."*
    - Supporting description: *"Meet BAKESHIFT — one innovative baking system designed to bring flexibility, convenience, and creativity into your kitchen."*
-   - Primary CTAs: **"Explore BAKESHIFT"** and **"Buy — $49.99"**.
+   - Primary CTAs: **"Explore BAKESHIFT"** and **"Buy — $47.00"**.
    - View switcher: 3D Interactive, Official Hero Pan (authentic 6-cup 2×3 crop), and Technical Blueprint.
    - Refined Apple-style mouse-wheel scroll indicator.
    - Quick-spec pill strip.
 2. **Design & Metallurgy (`#design`)**:
    - Dedicated industrial design showcase with interactive 3D WebGL pan canvas.
    - 4 engineering pillars: Commercial Aluminized Steel, Zero Silicone Philosophy, AISI 304 Wire Toggle Clasps, and Precision Laser Alignment Guides.
-   - Slogan callout: **"BAKE MORE WITH LESS."** with direct link to Shop ($49.99).
+   - Slogan callout: **"BAKE MORE WITH LESS."** with direct link to Shop ($47.00).
 3. **Modular Features (`#features`)**:
    - 4-configuration bento grid: 6-Cup Cupcake Tray (2×3), 9×9" Square Cake, 13×9" Full Sheet Cake, and Dual Loaf / Divider layout.
    - Kitchen space reclamation analysis: replaces 5 clunky pans, reclaiming over 70% of cabinet storage.
@@ -99,7 +99,7 @@ All visualizations (hero render, 3D configurator, exploded view, product gallery
    - **Scene 2 — ENDLESS POSSIBILITIES**: Detachable 6-cup tray descending with two toggle clasps locking. Headline: *"Six cupcakes. One smart design."*
    - **Scene 3 — MADE TO ADAPT**: Dual partitions sliding into place with outward clasps locking onto rim. Headline: *"Your baking. Your dimensions."*
    - **Scene 4 — ALL IN THE DETAILS**: Close-up macro zoom into aluminized steel, rounded corners, 1" alignment marks, and clasps. Headline: *"Thoughtful engineering. Simple everyday use."*
-   - **Scene 5 — BAKE MORE WITH LESS**: Full baking system configuration gallery with instant **"Shop BAKESHIFT — $49.99"** CTA.
+   - **Scene 5 — BAKE MORE WITH LESS**: Full baking system configuration gallery with instant **"Shop BAKESHIFT — $47.00"** CTA.
 5. **Explore 3D Laboratory (`#explore`)**:
    - 360° pan rotation, orbit, zoom, and preset camera angles (3/4 Isometric, Top Blueprint, Front, Side, Macro Detail).
    - Instant configuration buttons: **Cupcakes (2×3)**, **Square Cake (9×9)**, **Rectangle Cake**, **Loaf (5×9)**, **Empty Pan**, **Exploded View**, and **Reset**.
@@ -120,14 +120,14 @@ All visualizations (hero render, 3D configurator, exploded view, product gallery
    - Section 6 Estimated Component Weights table (imperial and metric).
    - Metallurgy breakdown and care guidelines.
 8. **Shop Experience (`#shop`)**:
-   - Prominent **$49.99 USD** fixed price (no fake discounts or crossed-out prices).
+   - Prominent **$47.00 USD** fixed price (no fake discounts or crossed-out prices).
    - 5-item gallery switcher: 3D Interactive Model, Assembled Pan, Exploded View, Clasp Detail, and 4 Baking Configurations.
-   - Interactive quantity stepper with live subtotal calculation ($49.99 × Qty).
-   - Accordions: What's Included (full 6-item inventory), Materials & Technical Specs, Shipping & Sales Tax ($12.00 tracked US shipping, 8.25% sales tax).
+   - Interactive quantity stepper with live subtotal calculation ($47.00 × Qty).
+   - Accordions: What's Included (full 6-item inventory), Materials & Technical Specs, Shipping & Sales Tax ($2.00 tracked US shipping, 8.25% sales tax).
    - Sticky purchase bar that slides in smoothly on scroll.
 9. **Shopping Bag (`#bag` & Slide-Out Drawer)**:
    - Slide-out drawer accessible from any page via navigation bag icon.
-   - Full bag page with quantity increment/decrement, line-item removal, live subtotal, $12.00 flat ground shipping, and 8.25% sales tax calculations.
+   - Full bag page with quantity increment/decrement, line-item removal, live subtotal, $2.00 flat ground shipping, and 8.25% sales tax calculations.
 10. **Checkout Preview (`#checkout-preview`)**:
     - **Prominent Demonstration Banner**:
       > *"Checkout Preview — BAKESHIFT online purchasing is coming soon."*  
@@ -231,13 +231,13 @@ STRIPE_SECRET_KEY=sk_test_...
 # Stripe Publishable Key (begins with pk_test_)
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 
-# Optional Price ID for BAKESHIFT Complete Baking System ($49.99 USD)
+# Optional Price ID for BAKESHIFT Complete Baking System ($47.00 USD)
 STRIPE_PRICE_ID=price_...
 ```
 
 ### Security & Safety Barriers
 - **Live Key Prohibition**: Any key starting with `sk_live_` is immediately rejected with HTTP 403 Forbidden.
-- **Server Price Enforcement**: Unit amount is strictly set to $49.99 USD (4999 cents) server-side; client price tampering is impossible.
+- **Server Price Enforcement**: Unit amount is strictly set to $47.00 USD (4700 cents) server-side; client price tampering is impossible.
 - **Secret Key Protection**: `STRIPE_SECRET_KEY` is only read on the server and is never sent to the browser or committed to version control.
 
 ### Official Stripe Test Cards

@@ -1669,7 +1669,7 @@ export class BakeShiftApp {
 
     const updateShopTotal = () => {
       display.textContent = this.selectedShopQty;
-      totalEl.textContent = `$${(47.00 * this.selectedShopQty).toFixed(2)} Total`;
+      totalEl.textContent = `$${(BAKESHIFT_PRODUCT.price * this.selectedShopQty).toFixed(2)} Total`;
     };
 
     if (minusBtn) minusBtn.addEventListener('click', () => { if (this.selectedShopQty > 1) { this.selectedShopQty--; updateShopTotal(); } });
